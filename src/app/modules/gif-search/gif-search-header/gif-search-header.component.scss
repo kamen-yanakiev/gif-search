@@ -1,0 +1,14 @@
+.gif-search-header-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .search-bar {
+        width: 50%;
+    }
+}
+
+.gif-search-header-container > div {
+    flex: 0 0 100%;
+    text-align: center;
+}

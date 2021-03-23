@@ -1,0 +1,15 @@
+.body-container {
+    height: 200vh;
+    display: flex;
+    flex-flow: row wrap;
+    .gif-search {
+        flex: 0 0 100%;
+        height: 75%;
+        border: 1px solid black;
+    }
+    .app-footer {
+        flex: 0 0 100%;
+        height: 25%;
+        border: 1px solid blue;
+    }
+}
