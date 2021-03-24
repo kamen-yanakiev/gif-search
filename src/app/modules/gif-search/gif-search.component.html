@@ -1,4 +1,4 @@
 <div class="gif-search-container">
-  <app-gif-search-header class="gif-search-header-container"></app-gif-search-header>
-  <app-gif-search-results class="gif-search-results-container"></app-gif-search-results>
+  <app-gif-search-header class="gif-search-header-container" (search)='onSearch($event)'></app-gif-search-header>
+  <app-gif-search-results class="gif-search-results-container" [searchTerm]='searchTerm'></app-gif-search-results>
 </div>

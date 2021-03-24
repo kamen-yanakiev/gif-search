@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-gif-search-header',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gif-search-header.component.scss']
 })
 export class GifSearchHeaderComponent implements OnInit {
+  @Output() search = new EventEmitter<string>();
 
-  constructor() { }
+  public searchTerm = '';
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  getGifs(): void {
+    this.search.emit(this.searchTerm);
   }
-
 }

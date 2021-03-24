@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gif-search.component.scss']
 })
 export class GifSearchComponent implements OnInit {
+  public searchTerm = '';
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  onSearch($event): void {
+    this.searchTerm = $event;
   }
 
 }

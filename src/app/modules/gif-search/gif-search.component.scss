@@ -7,15 +7,12 @@
     .gif-search-header-container {
         background: $header_color;
         flex: 0 0 100%;
-        min-height: 30%;
-        max-height: fit-content;
-        border: 1px solid red;
+        height: 30%;
     }
     .gif-search-results-container {
         background: $results_background;
         flex: 0 0 100%;
-        min-height: 70%;
-        max-height: fit-content;
-        border: 1px solid green;
+        height: 70%;
+        overflow: scroll;
     }
 }

@@ -1,3 +1,15 @@
-<p>
-  gif-search-results works!
-</p>
+<div class="gif-result-container"> 
+
+  <div class="images-container" *ngIf="gifs?.length > 0; else noContent">
+    <div class="image-container" *ngFor="let gif of gifs">
+      <img src="{{gif}}">
+    </div>
+  </div>
+
+  <ng-template #noContent>
+    <div class="no-result">
+      No results found
+    </div>
+  </ng-template>
+ 
+</div>

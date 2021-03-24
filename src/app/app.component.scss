@@ -4,13 +4,10 @@
     flex-flow: row wrap;
     .gif-search {
         flex: 0 0 100%;
-        min-height: 75%;
-        max-height: fit-content;
-        border: 1px solid black;
+        height: 75%;
     }
     .app-footer {
         flex: 0 0 100%;
-        min-height: 25%;
-        max-height: fit-content;
+        height: 25%;
     }
 }

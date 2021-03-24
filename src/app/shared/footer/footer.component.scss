@@ -23,15 +23,16 @@
 }
 
 .footer-container {
+    padding-top: 3rem;
     height: 100%;
     font-family: museo-slab, serif;
     display: flex;
     flex-flow: row wrap;
+    background: $footer_dark_background;
     
     .footer-top {
         flex: 0 0 100%;
         height: 80%;
-        background: $footer_dark_background;
         display: flex;
         flex-flow: row wrap;
         padding: 2rem 5rem 0 5rem;
@@ -40,6 +41,7 @@
             flex: 0 0 45%;
 
             .btn-and-input-container {
+                margin-top: 2rem;
                 width: 100%;
                 padding-right: 5rem;
 
@@ -53,6 +55,7 @@
             flex: 0 0 55%;
 
             .categories-container {
+                margin-top: 2rem;
                 list-style-type: none;
                 display: flex;
                 flex-flow: row wrap;

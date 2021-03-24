@@ -1,11 +1,60 @@
+@import 'src/styles/_variables';
+
+:host {
+    ::ng-deep {
+        .header-input {
+            div {
+                display: inline-block;
+
+                input {
+                    padding: 0 6rem 0 1rem;
+                    border-radius: 5px 0 0 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
 .gif-search-header-container {
     margin: 1rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    .search-bar {
-        width: 50%;
+
+    .gif-search-header {
+        margin: 4rem 0 3rem 0;
     }
+
+    .search-bar {
+        margin-bottom: 3.5rem;
+
+        .header-input {
+            width: 50%;
+        }
+
+        select {
+            height: 100%;
+            opacity: 1;
+            background: $dropdown_gray;
+            color: $gray;
+            padding: 1.1rem;
+            border: none;
+        }
+
+        .search-btn {
+            background: $black;
+            padding: 1.4rem;
+            border: none;
+            border-radius: 0 5px 4px 0;
+        }
+        
+    }
+
+    .search-info-text {
+        margin-bottom: 2.5rem;
+    }
+    
 }
 
 .gif-search-header-container > div {
