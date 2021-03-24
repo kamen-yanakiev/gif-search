@@ -1,5 +1,29 @@
 <div class="footer-container">
-  footer works!
-  <div class="footer-top"></div>
-  <div class="footer-bottom"></div>
+  <div class="footer-top">
+    <div class="footer-top-left">
+      <p class="large-text">Sign up and <br>get free content every week.</p>
+      <div class="btn-and-input-container">
+        <mcf-input type="text"
+          class="footer-input" 
+          placeholder="Enter your email..."></mcf-input>
+        <mcf-button mcfclass="-state-primary" class="footer-btn" label="Sign Up"></mcf-button>
+      </div>
+    </div>
+    <div class="footer-top-right">
+      <p class="large-text">Browse by categories</p>
+      <ul class="categories-container">
+        <li *ngFor="let category of categories" class="category"><a href="#">{{category}}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-links">Affiliates / Contributers / Press/Media / Careers / About / Contact</div>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook footer-icon"></i></a>
+      <a href="#"><i class="fa fa-twitter footer-icon"></i></a>
+      <a href="#"><i class="fa fa-google-plus footer-icon"></i></a>
+      <a href="#"><i class="fa fa-wifi footer-icon"></i></a>
+    </div>
+    <div class="footer-copyright">Copyright &#169; myCompany All rights reserved.</div>
+  </div>
 </div>
