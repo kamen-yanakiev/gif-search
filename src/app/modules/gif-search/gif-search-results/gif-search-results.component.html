@@ -2,7 +2,7 @@
 
   <div class="images-container" *ngIf="gifs?.length > 0; else noContent">
     <div class="image-container" *ngFor="let gif of gifs">
-      <img src="{{gif}}">
+      <img (click)='showModal(gif)' src="{{gif}}">
     </div>
   </div>
 
@@ -13,3 +13,17 @@
   </ng-template>
  
 </div>
+
+<mcf-modal
+#mcfModal
+[openAnimation]="'fadeIn'"
+[closeAnimation]="'fadeOut'"
+[closeonoutsideclick]="true"
+[transclude]="true"
+isfootervisible="true"
+cancellabel='Close'
+>
+  <div class="image-container-modal">
+    <img src="{{selectedGif}}">
+  </div>
+</mcf-modal>

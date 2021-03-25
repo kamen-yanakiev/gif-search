@@ -11,7 +11,12 @@ export class GiphyService {
   constructor(private http: HttpClient) {}
 
   getGifs(searchTerm?: string): Observable<string[]> {
-    const queryParams = searchTerm?.length > 0 ? searchTerm : 'welcome';
+    let queryParams = 'welcome';
+
+    if (searchTerm.length > 0) {
+      queryParams = searchTerm;
+    }
+
     return this.http
       .get(`${this.url}?api_key=${giphyApi}&limit=30&q=${queryParams}`)
       .pipe(

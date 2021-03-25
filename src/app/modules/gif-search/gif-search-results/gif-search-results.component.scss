@@ -1,11 +1,23 @@
 @import 'src/styles/_variables';
 
+:host {
+    ::ng-deep {
+        .mcf-modal-footer {
+            button {
+                margin-left: .5rem;
+                background: $accelya_blue;
+            }
+        }
+    }
+}
+
 .gif-result-container {
     padding: 5rem 4rem;
 
     .images-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        padding-left: 1rem;
 
         .image-container {
             flex: 0 0 33%;
@@ -17,8 +29,17 @@
                 width: auto;
             }
         }
+        
+        .image-container:hover {
+            cursor: pointer;
+        }
     }
     .no-result {
         color: $black;
     }
+}
+
+.image-container-modal {
+    margin: 1rem;
+    text-align: center;
 }
